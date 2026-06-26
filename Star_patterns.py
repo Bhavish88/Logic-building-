@@ -78,9 +78,25 @@ pattern 7
 *********
 n = 5
 for i in range(n):
+    # for space
     for j in range(n-i-1):
         print(" ",end="")
+    # for star 
     for j in range(2*i+1):
+        print("*",end="")
+    print()
+
+Pattern 8
+*********
+ *******
+  *****
+   ***
+    *
+n = 5
+for i in range(n):
+    for j in range(i):
+        print(" ",end="")
+    for j in range(2*n-(2*i+1)):
         print("*",end="")
     print()
 """
