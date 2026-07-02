@@ -218,4 +218,20 @@ for i in range(1,n+1):
         print(chr(start+j) , end=" ")
     print()
 
+
+Pattern 15
+A B C D E 
+A B C D 
+A B C 
+A B 
+A 
+
+n= 5
+start= ord("A")
+for i in range(n,0,-1):
+    for j in range(i):
+        print(chr(start+j) , end=" ")
+    print()
+
 """
+
