@@ -147,7 +147,14 @@ for i in range(n-1):
         print("*",end="")
     print()
 
-"""
+
+
+Pattern 11
+1
+01
+101
+0101
+10101
 
 n = 5 
 start= 1
@@ -160,4 +167,29 @@ for i in range(n):
         print(start,end="")
         start = 1 - start 
     print()
+
+Pattern 12
+1      1
+12    21
+123  321
+12344321
+
+n=4
+for i in range(1,n+1):
+    # number
+    for j in range(1, i+1):
+        print(j,end="")
+
+    # space
+    for j in range(2*(n-i)):
+        print(" ",end="")
+
+    # number
+    for j in range(i, 0, -1):
+        print(j,end="")
+
+    print()
+"""
+n= 5
+for i in range(1,n+1):
     
