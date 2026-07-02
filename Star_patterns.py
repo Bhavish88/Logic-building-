@@ -233,5 +233,19 @@ for i in range(n,0,-1):
         print(chr(start+j) , end=" ")
     print()
 
-"""
+Pattern 16
+A 
+B B 
+C C C 
+D D D D 
+E E E E E 
 
+n= 5
+start= ord("A")
+for i in range(1, n+1):
+    for j in range(i):
+        print(chr(start) , end=" ")
+    print()
+    start+=1
+
+"""
