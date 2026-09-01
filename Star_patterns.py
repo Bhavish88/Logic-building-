@@ -10,7 +10,7 @@ for i in range(5):
         print("*", end="")
     print()
 
-Patter 2
+Pattern 2
 * 
 * * 
 * * * 
@@ -248,4 +248,110 @@ for i in range(1, n+1):
     print()
     start+=1
 
+
+Pattern 18
+E 
+D E 
+C D E 
+B C D E 
+A B C D E 
+n = 5
+
+for i in range(1, n + 1):
+    start = ord("E") - i + 1
+
+    for j in range(i):
+        print(chr(start + j), end=" ")
+
+    print()
+
+
+
+Pattern 19
+* * * * * * * * * * 
+* * * *     * * * * 
+* * *         * * * 
+* *             * * 
+*                 * 
+*                 * 
+* *             * * 
+* * *         * * * 
+* * * *     * * * * 
+* * * * * * * * * * 
+n=5
+space=0
+for i in range(n):
+    #for star
+    for j in range(n-i):
+        print("*", end=" ")
+    #for space
+    for j in range(space):
+        print(" ",end=" ")
+    #for star
+    for j in range(n-i):
+        print("*", end=" ")
+    space+=2
+    print()
+space=8
+for i in range(1,n+1):
+    #for star
+    for j in range(i):
+        print("*", end=" ")
+    #for space
+    for j in range(space):
+        print(" ",end=" ")
+    #for star
+    for j in range(i):
+        print("*", end=" ")
+    space-=2
+    print()
+
+
+
+Pattern 20
+*                 * 
+* *             * * 
+* * *         * * * 
+* * * *     * * * * 
+* * * * * * * * * * 
+* * * *     * * * * 
+* * *         * * * 
+* *             * * 
+*                 * 
+n=5 
+space=8
+for i in range(1,n+1):
+    for j in range(i):
+        print("*",end=" ")
+    for j in range(space):
+        print(" ", end=" ")
+    for j in range(i):
+        print("*",end=" ")
+    space-=2
+    print()
+space=2
+for i in range(1,n):
+    for j in range(n-i):
+        print("*", end=" ")
+    for j in range(space):
+        print(" ",end=" ")
+    for j in range(n-i):
+        print("*",end=" ")
+    space+=2
+    print()
+
+Pattern 21
+* * * * 
+*     * 
+*     * 
+* * * * 
+n=4
+for i in range(n):
+    for j in range(n):
+        if i==0 or i==n-1 or j==0 or j==n-1:
+            print("*", end=" ")
+        else:
+            print(" ",end=" ")
+    print()
 """
+
