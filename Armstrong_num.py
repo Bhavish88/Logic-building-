@@ -2,8 +2,10 @@ class solution:
     def armstrong(x):
         ans = x
         num = 0
+
         temp = x
         digit=0
+        
         while temp > 0:
             temp//=10
             digit+=1

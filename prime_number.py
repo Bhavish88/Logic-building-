@@ -2,7 +2,7 @@
 # Example:
 # Input : 13
 # Output: Prime Number
-
+"""
 num = int(input(" Enter a Number:"))
 isPrime= True
 
@@ -19,3 +19,18 @@ if isPrime == True:
     print("Prime Number")
 else:
     print("Not a Prime number")
+"""
+
+def isPrime(x):
+
+    if x < 2:
+        return False
+
+    for i in range(2, int (x ** 0.5)+1):
+        if x % i == 0:
+            return False
+
+    return True 
+
+x = int(input("Enter a number: "))
+print(isPrime(x))
